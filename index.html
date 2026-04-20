@@ -82,7 +82,8 @@
 </head>
 <body>
     <div class="container">
-        <h1>🎉 App Launching Soon 🎉</h1>
+        <!-- <h1>🎉 App Launching Soon 🎉</h1> -->
+        <h1>🎉 First Round Coding session 🎉</h1>
         <div class="countdown">
             <div class="time-box">
                 <div class="time-number" id="days">00</div>
@@ -102,13 +103,13 @@
             </div>
         </div>
         <div class="launch-date">
-            📅 Sunday, April 19, 2026 @ 6:00 PM
+            📅 Sunday, April 20, 2026 @ 12:00 AM
         </div>
     </div>
 
     <script>
-        // Set the launch date (April 19, 2026 at 6:00 PM)
-        const launchDate = new Date(2026, 3, 19, 18, 0, 0); // Month is 0-indexed (3 = April)
+        // Set the launch date (April 20, 2026 at 12:00 AM)
+        const launchDate = new Date(2026, 3, 20, 24, 0, 0); // Month is 0-indexed (3 = April)
 
         function updateCountdown() {
             const now = new Date();
@@ -123,9 +124,13 @@
                 
                 // Show a launch message
                 const container = document.querySelector('.container');
+                // container.innerHTML = `
+                //     <h1>🚀 We're Live! 🚀</h1>
+                //     <div class="launch-date">The app has launched!</div>
+                // `;
                 container.innerHTML = `
-                    <h1>🚀 We're Live! 🚀</h1>
-                    <div class="launch-date">The app has launched!</div>
+                    <h1>🚀 First Round Coding Finished! 🚀</h1>
+                    <div class="launch-date">Congradulation!</div>
                 `;
                 return;
             }
